@@ -31,8 +31,8 @@
     </nav>
 </div>
 <div class="container">
-    <div class="justify-center" id="bancoDados">
-        <h2>Banco de dados</h2>
+        <h2 id="title">Banco de dados</h2>
+    <div class="justify-center parent" id="bancoDados">
         <table class="tblData">
             <tr>
                 <th>Alunos</th>
@@ -168,8 +168,7 @@
             </tr>
         </table>
     </div>
-    <div id="devWeb">
-            <h2>Desenvolvimento Web</h2>
+    <div class="justify-center parent" id="devWeb">
             <table class="tblData">
                 <tr>
                     <th>Alunos</th>
@@ -178,7 +177,7 @@
                     <th colspan="5">01/10</th>
                 </tr>
                 <tr>
-                <td>Alan Jhon</td>
+                    <td>Alan Jhon</td>
                     <td class="clicavel"> </td>
                     <td class="clicavel"> </td>
                     <td class="clicavel"> </td>
@@ -196,7 +195,7 @@
                     <td class="clicavel"> </td>
                 </tr>
                 <tr>
-                <td>Bianca Joaquina</td>
+                    <td>Bianca Joaquina</td>
                     <td class="clicavel"> </td>
                     <td class="clicavel"> </td>
                     <td class="clicavel"> </td>
@@ -214,8 +213,26 @@
                     <td class="clicavel"> </td>
                 </tr>
                 <tr>
-                <td>Carlos Mendel</td>
-                <td class="clicavel"> </td>
+                    <td>Brendon Zuckerman</td>
+                    <td class="clicavel"> </td>
+                    <td class="clicavel"> </td>
+                    <td class="clicavel"> </td>
+                    <td class="clicavel"> </td>
+                    <td class="clicavel"> </td>
+                    <td class="clicavel"> </td>
+                    <td class="clicavel"> </td>
+                    <td class="clicavel"> </td>
+                    <td class="clicavel"> </td>
+                    <td class="clicavel"> </td>
+                    <td class="clicavel"> </td>
+                    <td class="clicavel"> </td>
+                    <td class="clicavel"> </td>
+                    <td class="clicavel"> </td>
+                    <td class="clicavel"> </td>
+                </tr>
+                <tr>
+                    <td>Carlos Mendel</td>
+                    <td class="clicavel"> </td>
                     <td class="clicavel"> </td>
                     <td class="clicavel"> </td>
                     <td class="clicavel"> </td>
@@ -233,25 +250,7 @@
                 </tr>
                 <tr>
                 <td>Noeli Hainz</td>
-                <td class="clicavel"> </td>
                     <td class="clicavel"> </td>
-                    <td class="clicavel"> </td>
-                    <td class="clicavel"> </td>
-                    <td class="clicavel"> </td>
-                    <td class="clicavel"> </td>
-                    <td class="clicavel"> </td>
-                    <td class="clicavel"> </td>
-                    <td class="clicavel"> </td>
-                    <td class="clicavel"> </td>
-                    <td class="clicavel"> </td>
-                    <td class="clicavel"> </td>
-                    <td class="clicavel"> </td>
-                    <td class="clicavel"> </td>
-                    <td class="clicavel"> </td>
-                </tr>
-                <tr>
-                <td>Zack Effron</td>
-                <td class="clicavel"> </td>
                     <td class="clicavel"> </td>
                     <td class="clicavel"> </td>
                     <td class="clicavel"> </td>
@@ -268,8 +267,8 @@
                     <td class="clicavel"> </td>
                 </tr>
                 <tr>
-                <td>Zack Fernandes</td>
-                <td class="clicavel"> </td>
+                    <td>Zack Effron</td>
+                    <td class="clicavel"> </td>
                     <td class="clicavel"> </td>
                     <td class="clicavel"> </td>
                     <td class="clicavel"> </td>
@@ -286,7 +285,25 @@
                     <td class="clicavel"> </td>
                 </tr>
                 <tr>
-                <td>Zeus Stormholder</td>
+                    <td>Zack Fernandes</td>
+                    <td class="clicavel"> </td>
+                    <td class="clicavel"> </td>
+                    <td class="clicavel"> </td>
+                    <td class="clicavel"> </td>
+                    <td class="clicavel"> </td>
+                    <td class="clicavel"> </td>
+                    <td class="clicavel"> </td>
+                    <td class="clicavel"> </td>
+                    <td class="clicavel"> </td>
+                    <td class="clicavel"> </td>
+                    <td class="clicavel"> </td>
+                    <td class="clicavel"> </td>
+                    <td class="clicavel"> </td>
+                    <td class="clicavel"> </td>
+                    <td class="clicavel"> </td>
+                </tr>
+                <tr>
+                    <td>Zeus Stormholder</td>
                     <td class="clicavel"> </td>
                     <td class="clicavel"> </td>
                     <td class="clicavel"> </td>
@@ -331,10 +348,12 @@ $(document).ready(function() {
  'Clicked table cell value is: <b> ' + clickedCell.text() + '</b>');
  });
  $("#bd").click(function(){
+     $("#title").text("Banco de Dados")
     $("#devWeb").hide();
     $("#bancoDados").show();  
  });
  $("#dw").click(function(){
+    $("#title").text("Desenvolvimento Web")
     $("#bancoDados").hide();
     $("#devWeb").show();  
  });
