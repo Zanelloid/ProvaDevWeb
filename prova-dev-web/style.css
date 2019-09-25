@@ -1,0 +1,22 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+   }
+   th[colspan="5"]{
+    text-align: center;
+   }
+   td {
+    text-align: left;
+   }
+   td,th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+   }
+
+   #clicavel {
+       width: 25px;
+       height: 25px;
+   }
+
+
