@@ -1,0 +1,28 @@
+/*Nomes: Bernardo Laguna e Gabriel Zanella*/
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+   }
+   th[colspan="5"]{
+    text-align: center;
+   }
+   td.clicavel {
+       text-align: center;
+       width: 30px;
+       height: 30px;
+   }
+   td {
+    text-align: left;
+   }
+   td,th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+   }
+
+   .parent {
+        width: 80%;
+        height: 40%;
+        overflow: auto;
+   }
+
